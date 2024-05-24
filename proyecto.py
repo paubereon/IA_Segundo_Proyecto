@@ -87,7 +87,7 @@ else:
     
     # Mostrar el resultado
 
-    if np.max(score)>0.5:
+    if np.max(score)>0.4:
         st.subheader(f"Tipo de producto: {class_name}")
         st.text(f"Puntuación de confianza: {100 * np.max(score):.2f}%")
     else:
